@@ -1,0 +1,20 @@
+server:
+  port: 8081
+
+logging:
+  level:
+    root: info
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.10.2.98:3316/db_test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 654321
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.lucumt.model,com.lucumt.vo
+  type-handlers-package: com.lucumt.handler.mybatis
