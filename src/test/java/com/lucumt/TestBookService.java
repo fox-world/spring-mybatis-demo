@@ -16,8 +16,9 @@ public class TestBookService {
     private BookService bookService;
 
     @Test
-    public void testDeleteUser() {
+    public void testGetBook() {
         BookModel book = bookService.getBook(3);
+        Assertions.assertNotNull(book);
         System.out.println(book);
     }
 
