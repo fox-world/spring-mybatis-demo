@@ -11,8 +11,8 @@
         (#{name},#{info})
     </insert>
 
-    <select id="deleteUser" parameterType="Integer">
+    <delete id="deleteUser" parameterType="Integer">
         DELETE FROM user_info WHERE id= #{id}
-    </select>
+    </delete>
 
 </mapper>
