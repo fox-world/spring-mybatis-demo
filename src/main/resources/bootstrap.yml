@@ -6,13 +6,18 @@ logging:
     root: info
 
 
-#spring:
-#  cloud:
-#    nacos:
-#      config:
-#        namespace: e1c19595-0757-4231-89cb-19ea2db3bd8d
-#        group: orienlink
-#        server-addr: 10.10.2.98:8858
+spring:
+  cloud:
+    compatibility-verifier:
+      enabled: false
+    nacos:
+      discovery:
+        server-addr: 10.10.2.98:8858
+      config:
+        enabled: true
+        namespace: e1c19595-0757-4231-89cb-19ea2db3bd8d
+        group: orienlink
+        server-addr: 10.10.2.98:8858
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
