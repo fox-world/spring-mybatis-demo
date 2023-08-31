@@ -7,14 +7,16 @@ logging:
 
 
 spring:
+  application:
+     name: spring-mybatis-app
   cloud:
     nacos:
       discovery:
         server-addr: 10.10.2.98:8858
-      config:
-        enabled: true
         namespace: e1c19595-0757-4231-89cb-19ea2db3bd8d
-        group: orienlink
+        group: dev-1
+      config:
+        namespace: e1c19595-0757-4231-89cb-19ea2db3bd8d
         server-addr: 10.10.2.98:8858
         file-extension: yml
         extension-configs:
