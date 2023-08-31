@@ -15,4 +15,8 @@
         DELETE FROM user_info WHERE id= #{id}
     </delete>
 
+    <select id="queryAllUsers" resultType="userModel">
+        SELECT id,name,info FROM user_info ORDER BY id DESC
+    </select>
+
 </mapper>
