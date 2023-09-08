@@ -143,7 +143,7 @@
                     </dependency>
                 </dependencies>
                 <configuration>
-                    <configLocation>style/checkstyle_1.xml</configLocation>
+                    <configLocation>style/checkstyle_2.xml</configLocation>
                     <encoding>UTF-8</encoding>
                 </configuration>
                 <executions>
