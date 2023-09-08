@@ -20,7 +20,7 @@ public class BookService {
         return book;
     }
 
-    public List<BookModel> selectByType(Integer type){
+    public List<BookModel> selectByType(Integer type) {
         List<BookModel> bookList = bookMapper.selectByType(type);
         return bookList;
     }
