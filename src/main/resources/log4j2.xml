@@ -2,8 +2,7 @@
     <Appenders>
         <!-- Console appender configuration -->
         <Console name="console" target="SYSTEM_OUT">
-<!--            <PatternLayout pattern="%yellow{[%d{yyyy-MM-dd HH:mm:ss.SSS}]} %clr{[%-5level]} %green{%notEmpty{[TraceId-%X{TRACE_ID}]}} %cyan{[%c]}- %msg%n" />-->
-            <PatternLayout pattern="%yellow{[%d{yyyy-MM-dd HH:mm:ss.SSS}]} %clr{[%-5level]} %green{[TraceId-%X{TRACE_ID}]} %cyan{[%c]}- %msg%n" />
+            <PatternLayout pattern="%yellow{[%d{yyyy-MM-dd HH:mm:ss.SSS}]} %clr{[%-5level]} %green{%notEmpty{[TraceId-%X{TRACE_ID}]}} %cyan{[%c]}- %msg%n" />
         </Console>
     </Appenders>
     <Loggers>
